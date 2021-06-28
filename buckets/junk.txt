@@ -1,0 +1,260 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-090717c950a5c34d3",
+                    "InstanceId": "i-05070f902262af31e",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "butzer-ws-keypair1",
+                    "LaunchTime": "2021-06-28T20:10:50.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-12-68-224.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.12.68.224",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0dd447dd1e3e8f355",
+                    "VpcId": "vpc-0055752230db6161d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2021-06-24T17:55:32.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-050ae707ed087bb43"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::427491229895:instance-profile/butzer-devops-role",
+                        "Id": "AIPAWHCDWQDD4VLZT2M2D"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2021-06-24T17:55:32.000Z",
+                                "AttachmentId": "eni-attach-0f6ec05a43f8dddeb",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "butzer-ws-ssh-sg",
+                                    "GroupId": "sg-067d5d0cb608f6af9"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:b1:b6:57:61:35",
+                            "NetworkInterfaceId": "eni-05503dc2c9bb3ebad",
+                            "OwnerId": "427491229895",
+                            "PrivateDnsName": "ip-10-12-68-224.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.12.68.224",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-12-68-224.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10.12.68.224"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0dd447dd1e3e8f355",
+                            "VpcId": "vpc-0055752230db6161d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "butzer-ws-ssh-sg",
+                            "GroupId": "sg-067d5d0cb608f6af9"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "butzer-ws-tendollar1"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled"
+                    }
+                }
+            ],
+            "OwnerId": "427491229895",
+            "ReservationId": "r-0d7de6b537d5d44f8"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0ac73f33a1888c64a",
+                    "InstanceId": "i-0bcbaccdfcd9072dd",
+                    "InstanceType": "t3a.2xlarge",
+                    "KeyName": "butzer-ws-keypair1",
+                    "LaunchTime": "2021-06-24T18:35:02.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-12-69-128.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.12.69.128",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "StateTransitionReason": "User initiated (2021-06-25 16:13:30 GMT)",
+                    "SubnetId": "subnet-0dd447dd1e3e8f355",
+                    "VpcId": "vpc-0055752230db6161d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2021-06-24T18:35:03.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-097492f98a72d1285"
+                            }
+                        }
+                    ],
+                    "ClientToken": "A9C6330D-A38E-4903-927D-9C1B33922E4A",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::427491229895:instance-profile/csr-Ec2-Role-LP",
+                        "Id": "AIPAWHCDWQDD3WNH6QQVS"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2021-06-24T18:35:02.000Z",
+                                "AttachmentId": "eni-attach-0096f31da11d641e1",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "butzer-ws-ssh-sg",
+                                    "GroupId": "sg-067d5d0cb608f6af9"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:d0:f1:26:92:07",
+                            "NetworkInterfaceId": "eni-097164f9caa76a797",
+                            "OwnerId": "427491229895",
+                            "PrivateDnsName": "ip-10-12-69-128.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.12.69.128",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-12-69-128.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10.12.69.128"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0dd447dd1e3e8f355",
+                            "VpcId": "vpc-0055752230db6161d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "butzer-ws-ssh-sg",
+                            "GroupId": "sg-067d5d0cb608f6af9"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.UserInitiatedShutdown",
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "Project",
+                            "Value": "WaterSmart"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "butzer-ws-mini-pangeo-persistent-0"
+                        },
+                        {
+                            "Key": "Owner",
+                            "Value": "butzer@contractor.usgs.gov"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 4,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled"
+                    }
+                }
+            ],
+            "OwnerId": "427491229895",
+            "ReservationId": "r-00009987f8260cb9c"
+        }
+    ]
+}
