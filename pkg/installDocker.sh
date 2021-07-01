@@ -23,3 +23,6 @@
 # add ordinary user to the docker universe
  #sudo usermod -aG docker $USER
  sudo usermod -aG docker ubuntu
+
+ # fix credential errors with docker login
+ sudo dpkg -r --ignore-depends=golang-docker-credential-helpers golang-docker-credential-helpers
