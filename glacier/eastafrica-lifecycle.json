@@ -1,0 +1,26 @@
+{
+    "Rules": [
+        {
+            "ID": "Move EastAfrica to Glacier",
+            "Prefix": "EastAfrica/",
+            "Status": "Enabled",
+            "Transitions": [
+                {
+                    "Date": "2022-03-30",
+                    "StorageClass": "GLACIER"
+                }
+            ]
+        },
+        {
+            "Status": "Enabled",
+            "Prefix": "",
+            "NoncurrentVersionTransitions": [
+                {
+                    "NoncurrentDays": 2,
+                    "StorageClass": "GLACIER"
+                }
+            ],
+            "ID": "Move old versions to Glacier"
+        }
+    ]
+}
