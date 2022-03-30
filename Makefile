@@ -4,7 +4,12 @@ gitbig:
 	for file in `find . -size +10M`; do ls -lh $$file; done
 
 
-publish:
+token: 
+	./token.sh
+
+
+
+publish: token
 	git remote set-url origin git@github.com:tonybutzer/ws.git
 	git config --global user.email tonybutzer@gmail.com
 	git config --global user.name tonybutzer
